@@ -1,7 +1,5 @@
-// Resme styles
+// Resume styles
 // ---------------------------------------/
-
-// util
 
 .section-header {
   @include section_border;
@@ -19,7 +17,6 @@
 // page header styles
 
 .page-header { padding: 1.5rem 0;
-
   .avatar {
     width: 95px;
     max-width: 100%;
@@ -78,6 +75,10 @@
         float: left;
         margin: 0;
       }
+      @include print {
+        float: left;
+        margin: 0;
+      }
     }
   }
 
@@ -97,6 +98,11 @@
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
+    float: right;
+    border-top: none;
+    padding-top: 0;
+  }
+  @include print {
     float: right;
     border-top: none;
     padding-top: 0;
@@ -141,7 +147,7 @@
 // resume content styles
 
 .content-section {
-  margin: 0 0 3rem;
+  margin: 0 0 2rem;
 
   .resume-item { margin-bottom: 2rem; }
 
@@ -195,5 +201,60 @@
       font-weight: 700;
       color: #333;
     }
+  }
+}
+
+@include print {
+  .page-header {
+    padding: 0 0 1rem;
+    .header-name {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      letter-spacing: -.05rem;
+    }
+    .header-email {
+      line-height: 2rem;
+      float: right;
+      font-size: .75rem;
+    }
+    .title-bar {
+      .header-title {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .section-header {
+    h2 {
+      font-size: 1.1rem;
+      letter-spacing: -.05rem;
+    }
+    margin-bottom: 1rem;
+  }
+  .content-section {
+    margin-bottom: 1.5rem;
+    .resume-item {
+      margin-bottom: 1rem;
+    }
+    .resume-item-title {
+      font-size: 1rem;
+      margin-bottom: .5rem;
+    }
+    .resume-item-details {
+      font-size: .8rem;
+      margin-bottom: .3rem;
+    }
+  }
+  p, .resume-item-list {
+    font-size: 0.8rem;
+  }
+  .resume-item {
+    page-break-inside: avoid;
+  }
+  p {
+    orphans: 3;
+  }
+  .page-footer {
+    padding-top: .5rem;
+    margin-bottom: 0;
   }
 }
