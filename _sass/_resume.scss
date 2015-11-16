@@ -33,10 +33,31 @@
     @include sans;
     font-size: 3rem;
     font-weight: 900;
-    text-align: center;
     letter-spacing: -.15rem;
     line-height: 1;
     margin: 1rem 0 2rem;
+    text-align: left;
+  }
+
+  .header-email {
+    display: inline-block;
+    float: right;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: normal;
+    float: none;
+    line-height: 1rem;
+    a {
+      color: $text_color;
+      &:hover {
+        border-bottom: none;
+        color: #9c9c9c;
+      }
+    }
+    @include media_larger_than_mobile {
+      line-height: 4.5rem;
+      float: right;
+    }
   }
 
   .title-bar {
