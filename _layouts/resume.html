@@ -30,7 +30,7 @@
         </div>
 
         <div class="executive-summary">
-          <p>Full-stack software engineer with a focus on frontend web development. Technical lead for multiple applications for the Open Source engineering team at Qualcomm. B.S. in Computer Science.</p>
+          <p>Software engineer with a focus on frontend web development. Technical lead for multiple applications for the Open Source engineering team at Qualcomm. B.S. in Computer Science.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -50,16 +50,25 @@
         </header>
 
         <div class="resume-item">
+          <h3 class="resume-item-title">Qualcomm Software Content Compliance, Qualcomm Technologies Inc.</h3>
+          <h4 class="resume-item-details">Engineer, Senior Staff/Manager &bull; Nov, 2016 &mdash; Present</h4>
+          <h4 class="resume-item-details">Engineer, Staff/Manager &bull; May, 2016 &mdash; Nov, 2016</h4>
+          <p class="resume-item-copy">Technical lead for multiple applications used internally to facilitate open source usage, compliance, and contribution.</p>
+          <ul class="resume-item-list">
+            <li>Currently leading an effort to build a system of record for 3rd party software. This allows engineers to declare usage of 3rd party software which can later be validated by a code scan. In addition to minimizing impact to engineering and legal in collecting 3rd party software metadata, this system will also facilitate generation of artifacts such as Notice files. <em>Node, React, Redux, Material Design, Django, DRF</em></li>
+            <li>Contributor to <a href="https://clearlydefined.io" target="_blank">ClearlyDefined</a>, an <a href="https://opensource.org/working_groups#clearly" target="_blank">OSI Incubator Project</a> that seeks to make it easier to identify &amp; contribute missing information (e.g. licenses, copyright holders) to open source projects. The goal is to have more clarity around licenses and security vulnerabilities to increase user engagement. <em>Node, React, Redux</em></li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
           <h3 class="resume-item-title">Office of the Chief Scientist, Qualcomm Technologies Inc.</h3>
-          <h4 class="resume-item-details">Engineer, Staff &bull; Nov, 2012 &mdash; Present</h4>
+          <h4 class="resume-item-details">Engineer, Staff &bull; Nov, 2012 &mdash; May, 2016</h4>
           <h4 class="resume-item-details">Engineer, Senior &bull; Nov, 2011 &mdash; Oct, 2012</h4>
           <p class="resume-item-copy">Technical lead for multiple applications used internally to facilitate open source usage, compliance, and contribution.</p>
           <ul class="resume-item-list">
-            <li>Currently leading an effort to refresh the UI for Qualcomm's open source code scanner. Partnered with the UX team to conduct usability studies, generated and reviewed wireframes with users, coordinated with project management to build out roadmaps, engineered the frontend architecture. <em>Node, Mercury.js</em></li>
-            <li>Improved user efficiency and data discoverability for open source scan results by building an application that enabled searching, data aggregation, and visualization of scan reports. <em>Django, Backbone.js</em></li>
-            <li>Replaced the team's wiki-based website and MS Word-based monthly reports with a newly designed website that leverages Markdown + Jekyll. Coupled with Github Enterprise and Pull Requests, the new workflow is much more collaborative and asynchronous, reminiscent of an open source project.</li>
+            <li>Led a project to refresh the UI for Qualcomm's code scanner used for open source compliance. Partnered with the UX team to conduct usability studies, generated and reviewed wireframes with users, coordinated with project management to build out roadmaps, engineered the frontend architecture. <em>Node, vdom/mercury.js</em></li>
+            <li>Improved user efficiency and data discoverability for open source scan results by building an application that enabled searching, data aggregation, and visualization of scan reports. <em>Django, Backbone.js, Solr</em></li>
           </ul>
-
         </div>
 
         <div class="resume-item">
@@ -69,10 +78,9 @@
           <p class="resume-item-copy">Software engineer for multiple, high-usage web applications used internally throughout the company.</p>
           <ul class="resume-item-list">
             <li>Spearheaded a project to revamp the frontend of Qualcomm's most used internal app: the employee directory. After working with the UX group to redesign the UI, implemented the wireframes using frontend best practices and modern technologies, e.g. HTML5/CSS3. <em>jQuery, Java</em></li>
-            <li>Replaced an outdated interface for Qualcomm's intranet search engine with a modern UI that combined several data sources. This included Qualcomm Maps, which utilized the Google Maps API to display company buildings worldwide, allowed searching, and provided directions and building details. <em>Javascript, PHP</em></li>
+            <li>Replaced an outdated interface for Qualcomm's intranet search engine with a modern UI that combined several data sources. This included Qualcomm Maps, which utilized the Google Maps API to display company buildings worldwide. <em>Javascript, PHP</em></li>
             <li>Built a high-availability, high-throughput JSON web service (~10m hits/day) that provided employee's online presence information using Microsoft's Unified Communications API. <em>C# .NET</em>.</li>
           </ul>
-
         </div>
 
         <div class="resume-item">
@@ -91,12 +99,6 @@
           <h3 class="resume-item-title">University Library, UC Santa Cruz</h3>
           <h4 class="resume-item-details">Programmer/Analyst II &bull; Dec, 2004 &mdash; Apr, 2006</h4>
           <p class="resume-item-copy">Primary web developer for external and internal web sites and applications used by students, staff, faculty, and the public.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title">University Library, UC Santa Cruz</h3>
-          <h4 class="resume-item-details">Tech Support &amp; Web Developer &bull; 2003 &mdash; 2004</h4>
-          <p class="resume-item-copy">Provided tech support for staff and maintained a set of web sites and applications for the library.</p>
         </div>
 
       </section>
@@ -125,12 +127,17 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Recent Project</h2>
+          <h2>Recent Projects</h2>
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://mynameistechno.github.io/finderjs/">FinderJS &bull; mynameistechno.github.io/finderjs</a></h3>
+          <h3 class="resume-item-title"><a href="https://markmatyas.dev/finderjs/">FinderJS &bull; markmatyas.dev/finderjs</a></h3>
           <p class="resume-item-copy">FinderJS is a small UI component that allows you to browse tree-like data in columns, similar to the file manager in OS X. It supports both static and asynchronous data sources and is easy to customize.</p>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title"><a href="https://clearlydefined.io">ClearlyDefined</a></h3>
+          <p class="resume-item-copy">An <a href="https://opensource.org/working_groups#clearly" target="_blank">OSI Incubator Project</a> that seeks to make it easier to identify &amp; contribute missing information (e.g. licenses, copyright holders) to open source projects. The goal is to have more clarity around licenses and security vulnerabilities to increase user engagement.</p>
         </div>
 
       </section>
@@ -142,17 +149,17 @@
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Skills</h2>
+          <h2>(Recent) Skills</h2>
         </header>
 
         <div class="resume-item">
           <h4 class="resume-item-details">Languages</h4>
-          <p class="resume-item-copy">JavaScript, HTML5, CSS3, Python, Ruby, SQL</p>
+          <p class="resume-item-copy">JavaScript, HTML, CSS, Python</p>
         </div>
 
         <div class="resume-item">
           <h4 class="resume-item-details">Tools</h4>
-          <p class="resume-item-copy">Backbone.js, Mercury.js (unidirectional FRP-style JS library), Django, Ruby on Rails, Node, jQuery, Less, Sass, Stylus, Solr, Photoshop, Balsamiq, Git, Github Enterprise, PostgreSQL</p>
+          <p class="resume-item-copy">Node, React, Redux, Mercury.js (unidirectional FRP-style JS library built on top of virtual-dom), Django, JSON-API, Git, Github Enterprise</p>
         </div>
 
       </section>
@@ -162,7 +169,7 @@
       <footer class="page-footer">
         <p class="footer-line">
           <a href="https://github.com/mynameistechno/resume/raw/gh-pages/resume.pdf">PDF</a> &bull;
-          <a href="https://mynameistechno.github.io/">mynameistechno.github.io</a> &bull;
+          <a href="https://markmatyas.dev/">markmatyas.dev</a> &bull;
           Fork me on <a href="https://github.com/mynameistechno/resume">GitHub</a>.
         </p>
       </footer>
